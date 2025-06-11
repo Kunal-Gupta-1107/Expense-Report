@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV Champs - Audio Visual Community</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- <link rel="stylesheet" href="/favicon.ico" type="/" sizes="374*366"> -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="form-container">
+    <h2>Employee Mileage Expense Report</h2>
+
+    <div class="section">
+        <div class="form-column">
+            <label>Employee Name: <input type="text" id="empName"></label>
+            <label>Employee ID: <input type="text" id="empId"></label>
+            <label>Vehicle Description: <input type="text" id="vehicle"></label>
+        </div>
+        <div class="form-column">
+            <label>Pay Period From <input type="text" id="payFrom"></label>
+            <label>Pay Period To <input type="text" id="payTo"></label>
+            <label>Mileage Rate (per km): <input type="number" id="rate" value="10"></label>
+        </div>
+    </div>
+
+    <table id="mileage-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Starting Location</th>
+          <th>Ending Location</th>
+          <th>KMs</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Rows will be added Automatically (Dynamic Rowsa)-->
+      </tbody>
+    </table>
+
+    <button onclick="addRow()">➕ Add Row</button>
+    <h3>Total Reimbursement: ₹ <span id="total">0</span></h3>
+
+    <!-- <button onclick="downloadPDF()">📄 Download as PDF</button> -->
+    <button onclick="exportStyledExcel()">📊 Download as Excel</button>
+    <!-- <button onclick="exportToExcel()">📊 Download as Excel</button> -->
+    <button onclick="downloadPDF()">📊 Download as PDF</button>
+
+    <footer class="footer">
+        <a href="https://www.avchamps.com/" target="_blank">
+            <img src="logo.png" alt="Made With Love" class="footer-image" />
+        </a>
+    </footer>
+
+  </div>
+
+  <!-- Script Files -->
+   <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
