@@ -17,6 +17,11 @@ body {
   box-sizing: border-box;
 }
 
+.table-container{
+  overflow-x: auto;
+  width: 100%;
+}
+
 input, select, textarea {
   width: 100%;
   padding: 12px;
@@ -55,6 +60,7 @@ input:focus, textarea:focus, select:focus {
 
 table {
   width: 100%;
+  min-width: 800px;
   margin-top: 20px;
   border-collapse: collapse;
   background-color: #ffffff;
@@ -71,7 +77,15 @@ th {
 th, td {
   padding: 12px;
   border: 1px solid #d0dbe8;
-  text-align: left;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  th, td {
+    font-size: 12px;
+    padding:6px
+  }
 }
 
 button {
