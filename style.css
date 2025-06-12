@@ -7,21 +7,13 @@ body {
 }
 
 #form-container {
-/*   background: #ffffff; */
-/*   padding: 30px;
+  padding: 30px;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 123, 255, 0.1);
   max-width: 900px;
   width: 100%;
   margin: auto;
-  box-sizing: border-box; */
-  
-background: rgba(255, 255, 255, 0.25);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(4.7px);
--webkit-backdrop-filter: blur(4.7px);
-border: 1px solid rgba(255, 255, 255, 0.59);
+  box-sizing: border-box;
 }
 
 .table-container{
